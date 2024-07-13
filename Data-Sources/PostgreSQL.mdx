@@ -1,0 +1,39 @@
+# PostgreSQL
+Integrating PostgreSQL Database as a source allows SearchGPT to access and extract structured data directly from your PostgreSQL database. 
+This enables SearchGPT to leverage comprehensive datasets, including user information, transactional records, and other valuable database content,
+ensuring the inclusion of detailed and relevant information from your PostgreSQL database for thorough analysis and insights.
+
+## PostgreSQL Integration Setup
+
+### Step 1: Provide Details for Ingestion
+- #### DataBase Schema
+  - Ingest the Schema for the Database.
+  - The file format should be JSON/CSV.
+  - [Click here](https://app.searchgpt.dev/sources/new-source/file) to ingest the Database Schema.
+
+- #### Database URI
+  - URI of the PostgreSQL Database.
+  - **Example**: `postgresql://sally:sallyspassword@dbserver.example:5555/userdata?connect_timeout=10&sslmode=require&target_session_attrs=primary`.
+
+- #### Extract Info From Schema Template
+  - The template for extracting the relevant information from the provided Database Schema
+  - **Example**: `example-template`.
+
+- #### Text to SQL Template
+  - The template to convert the natural language to a SQL query.
+  - **Example**: `example-template`.
+
+- #### SQL to Final Output Prompt
+  - The template to summarize the raw response.
+  - **Example**: `example-template`.
+
+## Troubleshooting
+If you encounter any issues during setup or usage, refer to the following steps:
+
+1. **Confirm Schema Format**: Ensure your database schema file is in JSON or CSV format.
+2. **Validate Database URI**: Check the PostgreSQL Database URI for correct syntax and access credentials.
+3. **Match Template Structure**: Ensure templates for schema extraction, text-to-SQL conversion, and final output are correctly specified and formatted.
+
+## Contact Information
+For further assistance, contact our support team at [support@example.com](mailto:support@example.com).
+    
