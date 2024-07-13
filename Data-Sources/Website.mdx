@@ -1,0 +1,39 @@
+# Website
+Utilizing Websites as a source allows SearchGPT to extract data directly from various web pages. This enables SearchGPT to leverage diverse content, including articles, blog posts, and other online resources, ensuring the inclusion of relevant and current information from across the internet.
+
+## Website Ingestion Setup
+
+### Step 1: Provide Details for Ingestion
+
+- #### Website URL
+   - The URL of the website you would like to ingest.
+   - **Example**: `https://www.example.com`.
+
+### Advanced Features
+- #### Max Depth
+   - Maximum depth to ingest relative to the entered URL.
+   - **Values**: 
+     - `0`: Ingests only the entered URL.
+     - `1`: Ingests the entered URL and all pages one level deep.
+     - `2`: Ingests the entered URL and all pages up to two levels deep.
+     - **Note**: Higher values follow the same pattern.
+
+- #### Includes
+   - URL patterns to include in the ingestion. Only URLs matching these patterns will be ingested.
+   - **Example**: `blog/*`.
+
+- #### Excludes
+   - URL patterns to exclude from the ingestion. URLs matching these patterns will be skipped.
+   - **Example**: `private/*`.
+
+## Troubleshooting
+If you encounter any issues during setup or usage, refer to the following steps:
+
+1. **Verify URL**: Ensure the website URL is correct and accessible.
+2. **Check Depth Setting**: Make sure the max depth setting is appropriate for your ingestion needs.
+3. **Review Include/Exclude Patterns**: Verify that the include and exclude URL patterns are set correctly.
+4. **Review Error Logs**: Consult the chatbot's error logs for specific error messages and follow the suggested resolutions.
+
+
+## Contact Information
+For further assistance, contact our support team at [support@example.com](mailto:support@example.com).
