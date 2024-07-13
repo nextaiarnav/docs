@@ -1,91 +1,71 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
-  "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
-  },
-  "favicon": "/favicon.svg",
+  "name": "SearchGPT",
+  "favicon": "/images/nextia.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#4e4feb",
+    "light": "#0fa0fa",
+    "dark": "#4e4feb",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#4e4feb",
+      "to": "#0fa0fa"
     }
-  },
+  }, 
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "https://discord.com/channels/1113036728555540533/1113036729088229463/1153244783905607713"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Website",
+    "url": "https://app.searchgpt.dev/"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
+
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
       "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "icon": "discord",
+      "url": "https://discord.gg/syaMajSJAJ"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Youtube",
+      "icon": "youtube",
+      "url": "http://www.youtube.com/@nextai_official"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/company/nextaii"
+    },
+    {
+      "name": "Twitter",
+      "icon": "twitter",
+      "url": "https://twitter.com/nextai_official"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
+      "group": "Introduction",
+      "pages": ["Introduction/Welcome-to-SearchGPT","Introduction/Quickstart-with-Assistants"]
     },
     {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
+      "group": "NextAI Compute",
+      "pages": ["NextAI Compute/Deploy Open Source Model","NextAI Compute/Deploy Quantised Model","NextAI Compute/Deploy on Private Cloud","NextAI Compute/AWS Configurations","NextAI Compute/GCP Configurations","NextAI Compute/Requesting Quota Increase","NextAI Compute/Metrics"]
     },
     {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
+      "group": "Pricing",
+      "pages": ["Pricing/NextAI Pricing"]
+    },{
+      "group": "Finetuning",
+      "pages": ["Finetuning/Upload Dataset", "Finetuning/How to fine tune", "Finetuning/Deploy fine tuned model", "Finetuning/supported fine tuning"]
+    },{
+      "group": "Cookbook",
+      "pages": ["Cookbook/LangChain", "Cookbook/LlamaIndex", "Cookbook/Autogen", "Cookbook/Websites"]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/nextai_official",
+    "discord": "https://discord.gg/syaMajSJAJ",
+    "linkedin": "https://www.linkedin.com/company/nextaii"
   }
 }
