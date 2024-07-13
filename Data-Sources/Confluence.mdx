@@ -1,0 +1,49 @@
+# Confluence Database and Pages
+Integrating Confluence Spaces and Pages as a source allows SearchGPT to access and extract content from your Confluence workspace. This enables SearchGPT to leverage detailed documentation, project plans, meeting notes, and other valuable information stored within Confluence, ensuring the inclusion of comprehensive and current details about your projects and collaborative efforts.
+
+## Confluence Ingestion Setup
+
+### Step 1: Get your Confluence API Token
+- Get your Confluence API token from [here](https://id.atlassian.com/manage-profile/security/api-tokens). For more information, [see](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/).
+- **Note**: Ensure you have linked your API token to the Confluence space or page.
+
+### Step 2: Provide Details for Ingestion
+- #### URL of Workspace
+   - `base_url` for Confluence cloud instance, suffixed with `/wiki`.
+   - **Example**: `https://yoursite.atlassian.com/wiki`.
+
+- #### Confluence UserName
+   - Confluence username used for basic authentication.
+   - **Example**: `user@example.com`.
+
+- #### Space Key
+   - Unique identifier for your Conflunce Space.
+   - **Instructions**:
+     1. To get your space key: `Space Settings -> Space Details -> Space Key`
+     2. Space Key starts with a `~`
+   - **Example**: `~7120202c96ee0dedf248db9a420b0c265`.
+
+- #### Page IDs
+   - Unique identifier for your Conflunce Page.
+   - **Instructions**:
+      1. Navigate to a specific page
+      2. Go to the ellipses (...) at the top-right of the page
+      3. Choose Page Information. Depending on the Confluence version you might find under Advanced Details > Page Information
+      4. The URL in the address bar will change
+      5. Page ID will be displayed as a parameter in the URL
+   - **Example**: When Page Information page is opened, the URL will change to `http://my.domain.com/pages/viewinfo.action?pageId=65541`. In the          example above, `65541 is the Page ID`.
+
+### Advanced Features
+- #### Include Attachments
+   - Option to include attachments in the space/page.
+   - **Values**: `True` or `False`.
+
+## Troubleshooting
+If you encounter any issues during setup or usage, refer to the following steps:
+
+1. **Verify Credentials**: Ensure that your username, API key, and workspace URL are correct.
+2. **Check Permissions**: Make sure your API key has the necessary permissions to access the Confluence space and pages.
+3. **Review Error Logs**: Consult the chatbot's error logs for specific error messages and follow the suggested resolutions.
+
+## Contact Information
+For further assistance, contact our support team at [support@example.com](mailto:support@example.com).
