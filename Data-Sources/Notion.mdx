@@ -1,0 +1,39 @@
+# Notion Database and Pages
+Integrating Notion Databases and Pages as a source allows SearchGPT to access and extract content from your Notion workspace. This enables SearchGPT to leverage structured data, project plans, meeting notes, and other valuable information stored within Notion, ensuring the inclusion of comprehensive and up-to-date details about your projects and workflows.
+
+## Notion Integration Setup
+
+### Step 1: Get your Notion Integration Token
+- Get your Notion Integration token from [here](https://www.notion.so/profile/integrations). For more information, [see](https://developers.notion.com/docs/authorization).
+- **Note**: Ensure you have linked your integration token to the Notion page or database. For more information, [see](https://www.notion.so/help/add-and-manage-connections-with-the-api#add-connections-in-your-workspace).
+
+### Step 2: Provide Details for Ingestion
+- #### Page ID
+   - Unique identifier for your Notion page.
+   - **Instructions**:
+     1. Copy the link to your Notion page.
+     2. Extract the Page ID from the URL. It is everything after the last forward slash (/).
+   - **Example**: 
+       - URL: `https://www.notion.so/searchgpt/e82139ad35944673ada4db3734313409`
+       - Page ID: `e82139ad35944673ada4db3734313409`
+
+- #### Database ID
+   - Unique identifier for your Notion database.
+   - **Instructions**:
+     1. Copy the link to your Notion database.
+     2. Extract the Database ID from the URL by:
+        - Deleting everything before the last forward slash (/), including the slash itself.
+        - Deleting everything after the question mark (?) and the question mark itself.
+   - **Example**: 
+       - URL: `https://searchgpt.notion.site/356cb8c5b5ce4b43aebcbe408e0e125f?v=dd4f76d131144c5dac78a353d5f3bfdd`
+       - Database ID: `356cb8c5b5ce4b43aebcbe408e0e125f`
+
+## Troubleshooting
+If you encounter any issues during setup or usage, refer to the following steps:
+
+1. **Verify Credentials**: Ensure that your integration token, page ID, and database ID are correct.
+2. **Check Permissions**: Make sure your integration token has the necessary permissions to access the Notion page and database.
+3. **Review Error Logs**: Consult the chatbot's error logs for specific error messages and follow the suggested resolutions.
+
+## Contact Information
+For further assistance, contact our support team at [support@example.com](mailto:support@example.com).
