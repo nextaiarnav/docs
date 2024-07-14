@@ -47,7 +47,7 @@
     {
       "group": "Introduction",
       "pages": ["Introduction/getting-started","Introduction/meet-searchgpt"]
-    },
+    }
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/nextai_official",
