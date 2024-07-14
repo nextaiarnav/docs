@@ -50,7 +50,7 @@
     },
     {
       "group": "Assistants",
-      "pages": ["AgentGPT","AskGPT"]
+      "pages": ["Assistants/AgentGPT","Assistants/AskGPT"]
     },
     {
       "group": "Data-Sources",
