@@ -47,6 +47,14 @@
     {
       "group": "Introduction",
       "pages": ["Introduction/getting-started","Introduction/meet-searchgpt"]
+    },
+    {
+      "group": "Assistants",
+      "pages": ["AgentGPT","AskGPT"]
+    },
+    {
+      "group": "Data-Sources",
+      "pages": ["Data-Sources/Confluence","Data-Sources/Documents","Data-Sources/GitHub","Data-Sources/Notion","Data-Sources/PostgreSQL","Data-Sources/Website"]
     }
   ],
   "footerSocials": {
