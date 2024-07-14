@@ -1,6 +1,6 @@
 {
   "name": "SearchGPT",
-  "favicon": "/images/nextia.png",
+  "favicon": "/logo/next-logo.png",
   "colors": {
     "primary": "#4e4feb",
     "light": "#0fa0fa",
@@ -46,21 +46,7 @@
   "navigation": [
     {
       "group": "Introduction",
-      "pages": ["Introduction/Welcome-to-SearchGPT","Introduction/Quickstart-with-Assistants"]
-    },
-    {
-      "group": "NextAI Compute",
-      "pages": ["NextAI Compute/Deploy Open Source Model","NextAI Compute/Deploy Quantised Model","NextAI Compute/Deploy on Private Cloud","NextAI Compute/AWS Configurations","NextAI Compute/GCP Configurations","NextAI Compute/Requesting Quota Increase","NextAI Compute/Metrics"]
-    },
-    {
-      "group": "Pricing",
-      "pages": ["Pricing/NextAI Pricing"]
-    },{
-      "group": "Finetuning",
-      "pages": ["Finetuning/Upload Dataset", "Finetuning/How to fine tune", "Finetuning/Deploy fine tuned model", "Finetuning/supported fine tuning"]
-    },{
-      "group": "Cookbook",
-      "pages": ["Cookbook/LangChain", "Cookbook/LlamaIndex", "Cookbook/Autogen", "Cookbook/Websites"]
+      "pages": ["Introduction/getting-started","Introduction/meet-searchgpt"]
     }
   ],
   "footerSocials": {
