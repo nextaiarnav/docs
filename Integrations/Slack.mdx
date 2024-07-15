@@ -1,0 +1,88 @@
+# Slack Integration Documentation
+
+This guide will walk you through the steps to create a Slack app and integrate it into your workspace.
+
+[https://www.loom.com/share/a39a9c6da4d34acdbbe1d5a151a53b18?sid=f4dfd104-ed4d-4fe2-b2f1-a2b5dfac6821](https://www.loom.com/share/a39a9c6da4d34acdbbe1d5a151a53b18?sid=f4dfd104-ed4d-4fe2-b2f1-a2b5dfac6821)
+
+## Step 1: Create a New App
+
+1. **Log in to your Slack account.**
+2. **Navigate to the Slack API page**: [https://api.slack.com/apps](https://api.slack.com/apps).
+3. **Click "Create New App"**.
+4. **Select "From Scratch"**.
+5. **Provide your app name** and **select the workspace** where the app will be installed.
+
+## Step 2: Configure OAuth & Permissions
+
+1. In the left sidebar, **click "OAuth & Permissions"**.
+2. In the "Scopes" section, **add the following OAuth scopes**:
+    - **chat:write**
+    - **chat:write.public**
+        
+        ![Screenshot 2024-05-19 at 17.55.10.png](../images/Slack%20Integration%20Documentation%204e3da992a3fb421cbfb09ca71a12f6dc/Screenshot_2024-05-19_at_17.55.10.png)
+        
+3. **Click "Install to Workspace"**.
+4. **Allow the application to be installed**.
+    
+    ![Screenshot 2024-05-19 at 17.56.19.png](../images/Slack%20Integration%20Documentation%204e3da992a3fb421cbfb09ca71a12f6dc/Screenshot_2024-05-19_at_17.56.19.png)
+    
+
+## Step 3: Obtain Bot User OAuth Token
+
+1. After installation, a **Bot User OAuth Token** will be generated.
+2. **Copy and save this token** for later use.
+
+![Screenshot 2024-05-19 at 17.57.30.png](../images/Slack%20Integration%20Documentation%204e3da992a3fb421cbfb09ca71a12f6dc/Screenshot_2024-05-19_at_17.57.30.png)
+
+## Step 4: Generate App-Level Token
+
+1. In the left sidebar, **click "Basic Information"**.
+2. Navigate to **App-Level Tokens**.
+3. **Click "Generate Token and Scopes"**.
+4. **Provide a token name**.
+5. Click **"Add Scopes"** and add:
+    - **connections:write**
+6. **Click "Generate"**. This will create a token that starts with `xapp-1-A...`.
+7. **Copy and save this token** for later use.
+    
+    ![Screenshot 2024-05-19 at 18.03.26.png](../images/Slack%20Integration%20Documentation%204e3da992a3fb421cbfb09ca71a12f6dc/Screenshot_2024-05-19_at_18.03.26.png)
+    
+
+## Step 5: Enable Socket Mode
+
+1. In the left sidebar, **click "Socket Mode"**.
+2. **Enable Socket Mode**.
+
+## Step 6: Enable Interactivity & Shortcuts
+
+1. Ensure that **Interactivity & Shortcuts** are enabled.
+
+## Step 7: Subscribe to Bot Events
+
+1. In the left sidebar, **click "Event Subscriptions"**.
+2. **Enable Events**.
+3. **Subscribe to bot events** by clicking **"Add Bot User Event"** and adding:
+    - **app_mention**
+    - [**message.im**](http://message.im/)
+        
+        ![Screenshot 2024-05-19 at 18.05.27.png](../images/Slack%20Integration%20Documentation%204e3da992a3fb421cbfb09ca71a12f6dc/Screenshot_2024-05-19_at_18.05.27.png)
+        
+4. A pop-up toast will appear, prompting you to **re-install your application**.
+5. **Click "Re-install your app"** and allow the reinstallation.
+
+## Step 8: Configure Messages Tab
+
+1. In the left sidebar, **click "App Home"**.
+2. Navigate to the **Messages Tab**.
+3. Enable **"Allow users to send Slash commands and messages from the messages tab"**.
+
+## Step 9: Verify Your Application in Slack Workspace
+
+1. **Go to your Slack workspace**.
+2. **Verify** that your application has been created.
+
+## Final Steps
+
+1. **Use both the Bot User OAuth Token and the App-Level Token** in your admin panel to integrate your app.
+
+Congratulations! Your Slack app is now created and integrated into your workspace.

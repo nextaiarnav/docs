@@ -1,0 +1,85 @@
+# Discord Integration Documentation
+
+This guide will walk you through the steps to create a Discord bot and integrate it into your server.
+
+[https://www.loom.com/share/88abd3ca9afd456cae957a5fc3e2e60e?sid=f003d6b1-678a-425f-a615-790105797178](https://www.loom.com/share/88abd3ca9afd456cae957a5fc3e2e60e?sid=f003d6b1-678a-425f-a615-790105797178)
+
+## Step 1: Create a Discord Server
+
+1. **Log in to your Discord account.**
+2. **Click the add server button** (`+` button) on the left sidebar.
+3. **Select "Create My Own".**
+4. **Choose "For me and my friends".**
+5. **Provide a server name** and click "Create".
+
+## Step 2: Create a New Application
+
+1. **Navigate to the Discord Developer Portal**: [https://discord.com/developers/applications](https://discord.com/developers/applications).
+2. **Click "New Application"**.
+3. **Provide an application name** and click "Create".
+    
+    ![Screenshot 2024-05-19 at 18.07.24.png](../images/Discord%20Integration%20Documentation%209bfa42faffd9448b8e727c5c2d9c32cd/Screenshot_2024-05-19_at_18.07.24.png)
+    
+
+## Step 3: Modify Your Application
+
+1. **Add an icon** and **description** for your application on the application's General Information page.
+
+## Step 4: Create a Bot
+
+1. In the left sidebar, **click "Bot"**.
+2. **Click "Add Bot"** and confirm by clicking "Yes, do it!".
+3. **Set bot permissions**:
+    - Select **"Send Messages"** under "Bot Permissions".
+        
+        ![Screenshot 2024-05-19 at 18.08.19.png](../images/Discord%20Integration%20Documentation%209bfa42faffd9448b8e727c5c2d9c32cd/Screenshot_2024-05-19_at_18.08.19.png)
+        
+
+## Step 5: Enable Privileged Gateway Intents
+
+1. Under the bot settings, find **Privileged Gateway Intents** and enable the following:
+    - **Presence Intent**
+    - **Server Members Intent**
+    - **Message Content Intent**
+    
+    ![Screenshot 2024-05-19 at 18.08.02.png](../images/Discord%20Integration%20Documentation%209bfa42faffd9448b8e727c5c2d9c32cd/Screenshot_2024-05-19_at_18.08.02.png)
+    
+2. **Important**: Click **"Save Changes"**.
+
+## Step 6: Generate OAuth2 URL
+
+1. In the left sidebar, **click "OAuth2"**.
+2. Select **"URL Generator"**.
+3. **Select Scopes**:
+    - **bot**
+4. **Select Bot Permissions**:
+    - **Send Messages**
+    - **Read Messages/View Channels**
+    
+    ![Screenshot 2024-05-19 at 18.11.07.png](../images/Discord%20Integration%20Documentation%209bfa42faffd9448b8e727c5c2d9c32cd/Screenshot_2024-05-19_at_18.11.07.png)
+    
+5. **Copy the generated URL**.
+
+## Step 7: Authorize Your Bot
+
+1. Paste the copied URL into a new tab.
+2. **Select the server** where you want to add the bot.
+    
+    ![Screenshot 2024-05-19 at 18.11.22.png](../images/Discord%20Integration%20Documentation%209bfa42faffd9448b8e727c5c2d9c32cd/Screenshot_2024-05-19_at_18.11.22.png)
+    
+3. Click **"Continue"** and then **"Authorize"**.
+
+## Step 8: Obtain the Bot Token
+
+1. Return to the **Discord Developer Portal**.
+2. In the left sidebar, click **"Bot"**.
+3. Click **"Reset Token"**.
+    
+    ![Screenshot 2024-05-19 at 18.12.17.png](../images/Discord%20Integration%20Documentation%209bfa42faffd9448b8e727c5c2d9c32cd/Screenshot_2024-05-19_at_18.12.17.png)
+    
+4. **Provide your password** to confirm.
+5. **Save the token** for later use in your admin panel to integrate your application.
+
+Congratulations! Your Discord bot application has been created and is ready for integration.
+
+**Important Note: When messaging with your application, always use `!question` before any messages.**
