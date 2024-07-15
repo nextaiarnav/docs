@@ -54,7 +54,11 @@
     },
     {
       "group": "Data-Sources",
-      "pages": ["Data-Sources/Confluence","Data-Sources/Documents","Data-Sources/GitHub","Data-Sources/Notion","Data-Sources/PostgreSQL","Data-Sources/Website"]
+      "pages": ["Data-Sources/Confluence","Data-Sources/Documents","Data-Sources/GitHub","Data-Sources/Notion","Data-Sources/PostgreSQL","Data-Sources/Shopify", "Data-Sources/Website"]
+    },
+    {
+      "group": "Integrations",
+      "pages": ["Integrations/Discord","Integrations/Shopify","Integrations/Slack"]
     }
   ],
   "footerSocials": {
