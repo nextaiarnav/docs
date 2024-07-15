@@ -46,7 +46,7 @@
   "navigation": [
     {
       "group": "Introduction",
-      "pages": ["Introduction/getting-started","Introduction/meet-searchgpt"]
+      "pages": ["Introduction/meet-searchgpt", "Introduction/getting-started"]
     },
     {
       "group": "Assistants",
