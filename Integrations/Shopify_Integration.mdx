@@ -1,0 +1,27 @@
+# Shopify Integration
+
+After successful data ingestion, follow these steps:
+
+1. Navigate to Home page in the side panel.
+2. You can see **"Widget Code"** 
+    
+    You will get a JS script that looks like this:
+    
+
+```jsx
+<script src="<https://cdn.jsdelivr.net/npm/@nextai/searchmate@0.1.4/build/static/js/main.js?key=2afxxxxxxxxxxxxxx>"></script>
+```
+
+Copy the code.
+
+1. Navigate to your Shopify store admin panel.
+    1. Click on **"Online Store"**.
+    2. From there, click on **"Customize"**.
+    3. On the top, you will find a three dots option **(...)**, click on that.
+    4. Click **"Edit Code"**.
+    5. Find **'theme.liquid'** or use the search bar to filter.
+    6. Paste the copied script code at the bottom of the `theme.liquid` file where the `</script>` tag ends.
+        
+        ![Screenshot 2024-07-07 at 19.51.55.png](Shopify%20Integration%2023108fa96d324f5c97f1bc5fc1f7a370/Screenshot_2024-07-07_at_19.51.55.png)
+        
+    7. Save the file. That's it!
