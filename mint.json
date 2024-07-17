@@ -50,7 +50,26 @@
     },
     {
       "group": "Assistants",
-      "pages": ["Assistants/AgentGPT","Assistants/AskGPT"]
+      "pages": [
+        {
+          "group": "AgentGPT",
+          "pages": [
+            "Assistants/AgentGPT/Attributes",
+            "Assistants/AgentGPT/Configuration"
+          ]
+        },
+        {
+          "group": "AskGPT",
+          "pages": [
+            "Assistants/AskGPT/Attributes",
+            "Assistants/AskGPT/Configuration"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Agent-Tools",
+      "pages": ["Agent-Tools/PostgreSQL"]
     },
     {
       "group": "Data-Sources",
