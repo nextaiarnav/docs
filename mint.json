@@ -54,15 +54,15 @@
         {
           "group": "AgentGPT",
           "pages": [
-            "Assistants/AgentGPT/Attributes",
-            "Assistants/AgentGPT/Configuration"
+            "Assistants/AgentGPT/Configuration",
+            "Assistants/AgentGPT/Attributes"
           ]
         },
         {
           "group": "AskGPT",
           "pages": [
-            "Assistants/AskGPT/Attributes",
-            "Assistants/AskGPT/Configuration"
+            "Assistants/AskGPT/Configuration",
+            "Assistants/AskGPT/Attributes"
           ]
         }
       ]
